@@ -37,9 +37,9 @@ const ServiceCard = (props) => {
             style={{ margin: 30, padding: 20 }}
             className="row card text-center service-card"
           >
-            <img style={{ width: 74 }} className="mx-auto" src={image} alt="" />
+            {/* <img style={{ width: 74 }} className="mx-auto" src={image} alt="" /> */}
 
-            {/* <img style={{ width: 74 }} className="mx-auto" src={`data:image/png;base64,${image.img}`}/> */}
+            <img style={{ width: 74 }} className="mx-auto" src={`data:image/png;base64,${image.img}`}/>
               
               
               
