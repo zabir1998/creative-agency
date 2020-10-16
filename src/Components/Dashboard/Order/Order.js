@@ -18,7 +18,7 @@ const Order = () => {
   const [file, setFile] = useState(null);
 
   useEffect(() => {
-    fetch("http://localhost:5000/services")
+    fetch("https://polar-springs-72792.herokuapp.com/services")
       .then((res) => res.json())
       .then((data) => {
         const service = data.find(
@@ -39,7 +39,7 @@ const Order = () => {
       file: values.file,
       orderTime: new Date(),
     };
-    fetch("http://localhost:5000/addOrder", {
+    fetch("https://polar-springs-72792.herokuapp.com/addOrder", {
       method: "POST",
       headers: { "Content-Type": "application/json" },
       body: JSON.stringify(orderDetails),

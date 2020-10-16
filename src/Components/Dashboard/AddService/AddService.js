@@ -5,7 +5,7 @@ import Sidebar from '../Sidebar/Sidebar';
 
     
     // const handleAddServices=()=>{
-    //   fetch('http://localhost:5000/addServices',{
+    //   fetch('https://polar-springs-72792.herokuapp.com/addServices',{
     //       method:'POST',
     //       headers:{
     //           'Content-Type':'application/json'
@@ -15,7 +15,7 @@ import Sidebar from '../Sidebar/Sidebar';
     // }
 
     // const handleAddReviews=()=>{
-    //     fetch('http://localhost:5000/addReviews',{
+    //     fetch('https://polar-springs-72792.herokuapp.com/addReviews',{
     //         method:'POST',
     //         headers:{
     //             'Content-Type':'application/json'
@@ -47,7 +47,7 @@ import Sidebar from '../Sidebar/Sidebar';
           formData.append("name", info.name);
           formData.append("description", info.description);
 
-          fetch('http://localhost:5000/addService', {
+          fetch('https://polar-springs-72792.herokuapp.com/addService', {
       method: "POST",
       body: formData,
     })
